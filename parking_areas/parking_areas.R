@@ -17,10 +17,10 @@ showtext_auto()
 
 
 # Loading dataset
-data <- read.csv("TRAMS.csv", sep=",", header=T)
+data <- read.csv("https://raw.githubusercontent.com/lau-cloud/30DayMapChallenge/main/parking_areas/TRAMS.csv", sep=",", header=T)
 
 # Loading Barcelona's district boundaries
-districts <- st_read("0301040100_Districtes_UNITATS_ADM.json",
+districts <- st_read("https://raw.githubusercontent.com/lau-cloud/30DayMapChallenge/main/parking_areas/0301040100_Districtes_UNITATS_ADM.json",
                   stringsAsFactors = FALSE, 
                   as_tibble = TRUE)
 
